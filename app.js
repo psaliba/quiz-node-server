@@ -8,6 +8,7 @@ import mongoose from "mongoose";
 import UserRoutes from "./Kanbas/users/routes.js";
 import session from "express-session";
 import "dotenv/config";
+import QuizRoutes from "./Kanbas/quizzes/routes.js";
 
 if (process.env.NODE_ENV === "development"){
     await mongoose.connect(process.env.DB_CONNECTION_STRING, {
@@ -51,6 +52,7 @@ lab5(app);
 CourseRoutes(app);
 ModuleRoutes(app);
 UserRoutes(app);
+QuizRoutes(app);
 
 
 

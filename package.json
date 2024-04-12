@@ -1,6 +1,6 @@
 {
   "type": "module",
-  "name": "kanbas-node-server-app",
+  "name": "quiz-kanbas-node-server-app",
   "version": "1.0.0",
   "description": "web server for kanbas app",
   "main": "index.js",

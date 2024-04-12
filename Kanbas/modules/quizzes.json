@@ -1,0 +1,60 @@
+[
+  {
+    "course_id": "123456789012345678901234",
+    "title": "Math Quiz",
+    "published": true,
+    "available_date": "2024-04-10T08:00:00.000Z",
+    "available_until_date": "2024-04-15T23:59:59.000Z",
+    "due_date": "2024-04-15T23:59:59.000Z",
+    "quiz_type": "Graded Quiz",
+    "assignment_group": "Quizzes",
+    "shuffle_answers": true,
+    "time_limit": 30,
+    "show_correct_answers": "After Submitted",
+    "access_code": "",
+    "one_question_at_a_time": true,
+    "webcam_required": false,
+    "lock_questions_after_answering": false,
+    "questions": [
+      {
+        "text": "What is 2 + 2?",
+        "options": ["3", "4", "5"],
+        "correct_option": 1
+      },
+      {
+        "text": "What is the capital of France?",
+        "options": ["London", "Paris", "Berlin"],
+        "correct_option": 1
+      }
+    ]
+  },
+  {
+    "course_id": "987654321098765432109876",
+    "title": "History Quiz",
+    "published": false,
+    "available_date": "2024-04-12T08:00:00.000Z",
+    "available_until_date": "2024-04-17T23:59:59.000Z",
+    "due_date": "2024-04-17T23:59:59.000Z",
+    "quiz_type": "Practice Quiz",
+    "assignment_group": "Quizzes",
+    "shuffle_answers": true,
+    "time_limit": 20,
+    "show_correct_answers": "Immediately",
+    "access_code": "history123",
+    "one_question_at_a_time": false,
+    "webcam_required": true,
+    "lock_questions_after_answering": false,
+    "questions": [
+      {
+        "text": "Who was the first president of the United States?",
+        "options": ["Thomas Jefferson", "Abraham Lincoln", "George Washington"],
+        "correct_option": 2
+      },
+      {
+        "text": "In which year did World War I begin?",
+        "options": ["1914", "1918", "1945"],
+        "correct_option": 0
+      }
+    ]
+  }
+]
