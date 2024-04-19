@@ -17,6 +17,7 @@ export default function QuizRoutes(app) {
     };
 
     const findQuizById = async (req, res) => {
+        console.log("got here")
         const quiz = await dao.findQuizById(req.params.quizId);
         res.json(quiz);
     };

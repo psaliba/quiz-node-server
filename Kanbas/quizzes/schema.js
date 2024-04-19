@@ -57,6 +57,10 @@ const quizSchema = new mongoose.Schema({
         enum: ['Graded Quiz', 'Practice Quiz', 'Graded Survey', 'Ungraded Survey'],
         default: 'Graded Quiz'
     },
+    points: {
+        type: Number,
+        default: 0
+    },
     assignment_group: {
         type: String,
         enum: ['Quizzes', 'Exams', 'Assignments', 'Projects'],
@@ -69,6 +73,10 @@ const quizSchema = new mongoose.Schema({
     time_limit: {
         type: Number,
         default: 20 // in minutes
+    },
+    multiple_attempts: {
+        type: Boolean,
+        default: false
     },
     show_correct_answers: {
         type: String,
