@@ -36,6 +36,9 @@ const quizSchema = new mongoose.Schema({
         type: String,
         required: true
     },
+    description: {
+        type: String
+    },
     published: {
         type: Boolean,
         default: false
