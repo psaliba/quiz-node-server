@@ -1,6 +1,15 @@
 import mongoose from "mongoose";
 
+const optionSchema = new mongoose.Schema({
+    option: {
+        type: String
+    }
+})
+
 const questionSchema = new mongoose.Schema({
+    title: {
+        type: String
+    },
     type: {
         type: String,
         enum: ['Multiple Choice', 'True/False', 'Fill in the Blank'],
@@ -16,11 +25,8 @@ const questionSchema = new mongoose.Schema({
         required: true
     },
 
-    // Going to need to update this so it can handle all types of questions
-    options: [{
-        type: String,
-        required: true
-    }],
+    options: [optionSchema],
+
     correct_option: {
         type: Number,
         required: true
