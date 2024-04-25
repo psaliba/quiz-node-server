@@ -28,6 +28,7 @@ export default function UserRoutes(app) {
         const user = await dao.findUserByUsername(req.body.username);
         if (user) {
             res.status(400).json({ error: "Username already exists" });
+            return;
         }
         const currentUser = await dao.createUser(req.body);
         req.session["currentUser"] = currentUser;
